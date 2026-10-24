@@ -8,4 +8,14 @@ public class Motocykl extends Pojazd {
         this.pojemnoscSilnika = pojemnoscSilnika;
         this.maKufer = maKufer;
     }
+
+    @Override
+    public String getTyp() {
+        return "Motocykl";
+    }
+
+    @Override
+    public String getSzczegoly() {
+        return "pojemność: " + pojemnoscSilnika + " cm3, kufer: " + (maKufer ? "tak" : "nie");
+    }
 }
