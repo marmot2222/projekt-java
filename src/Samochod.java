@@ -8,4 +8,14 @@ public class Samochod extends Pojazd {
         this.liczbaMiejsc = liczbaMiejsc;
         this.rodzajPaliwa = rodzajPaliwa;
     }
+
+    @Override
+    public String getTyp() {
+        return "Samochód";
+    }
+
+    @Override
+    public String getSzczegoly() {
+        return "miejsc: " + liczbaMiejsc + ", paliwo: " + rodzajPaliwa;
+    }
 }
