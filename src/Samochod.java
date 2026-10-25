@@ -1,21 +1,13 @@
 public class Samochod extends Pojazd {
-    private final int liczbaMiejsc;
-    private final String rodzajPaliwa;
+    private final int miejsca;
 
-    public Samochod(int id, String marka, String model, int rokProdukcji, double cenaZaDzien,
-                    int liczbaMiejsc, String rodzajPaliwa) {
-        super(id, marka, model, rokProdukcji, cenaZaDzien);
-        this.liczbaMiejsc = liczbaMiejsc;
-        this.rodzajPaliwa = rodzajPaliwa;
+    public Samochod(String marka, String model, double cena, int miejsca) {
+        super(marka, model, cena);
+        this.miejsca = miejsca;
     }
 
     @Override
-    public String getTyp() {
-        return "Samochód";
-    }
-
-    @Override
-    public String getSzczegoly() {
-        return "miejsc: " + liczbaMiejsc + ", paliwo: " + rodzajPaliwa;
+    public String szczegoly() {
+        return "Samochod, miejsc: " + miejsca;
     }
 }
