@@ -25,7 +25,26 @@ public class Wypozyczalnia {
     static Scanner sc = new Scanner(System.in);
 
     static void zaladujBaze() {
-
+        pojazdy.add(new Samochod("Toyota", "Corolla", 150, 5));
+        pojazdy.add(new Samochod("Skoda", "Octavia", 140, 5));
+        pojazdy.add(new Samochod("BMW", "X5", 400, 5));
+        pojazdy.add(new Samochod("Fiat", "500", 100, 4));
+        pojazdy.add(new Samochod("Audi", "A4", 280, 5));
+        pojazdy.add(new Samochod("Ford", "Focus", 130, 5));
+        pojazdy.add(new Samochod("Opel", "Astra", 120, 5));
+        pojazdy.add(new Samochod("Tesla", "Model 3", 300, 5));
+        pojazdy.add(new Samochod("Kia", "Sportage", 220, 5));
+        pojazdy.add(new Samochod("Volkswagen", "Transporter", 250, 9));
+        pojazdy.add(new Samochod("Mercedes", "Sprinter", 350, 9));
+        pojazdy.add(new Samochod("Renault", "Clio", 110, 5));
+        pojazdy.add(new Motocykl("Honda", "CBR600RR", 120, 600));
+        pojazdy.add(new Motocykl("Yamaha", "MT-07", 100, 689));
+        pojazdy.add(new Motocykl("BMW", "R1250GS", 200, 1250));
+        pojazdy.add(new Motocykl("Kawasaki", "Ninja 650", 110, 649));
+        pojazdy.add(new Motocykl("Suzuki", "V-Strom 650", 105, 645));
+        pojazdy.add(new Motocykl("Ducati", "Monster", 250, 937));
+        pojazdy.add(new Motocykl("Harley-Davidson", "Street Glide", 300, 1868));
+        pojazdy.add(new Motocykl("KTM", "Duke 390", 90, 373));
     }
 
     public static void main(String[] args) {
